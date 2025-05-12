@@ -1,0 +1,33 @@
+@model List<ProductListViewModel>
+
+@{
+    ViewData["Title"] = "All Products";
+}
+
+<h2>All Farmer Products</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Production Date</th>
+            <th>Farmer</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Category</td>
+                <td>@product.ProductionDate.ToShortDateString()</td>
+                <td>@product.FarmerName</td>
+                <td>
+                    <img src="@product.ImagePath" width="120" height="100" style="object-fit: cover;" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

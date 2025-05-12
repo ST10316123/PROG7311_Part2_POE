@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\07a9cf15-31fd-48c3-af42-8fd329dc0d3a_Pineapples.jpg",
+      "PackagePath": "staticwebassets\\images\\07a9cf15-31fd-48c3-af42-8fd329dc0d3a_Pineapples.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\65c99e67-6317-4608-ab2c-75ea1199545b_Tomatoes.jpg",
+      "PackagePath": "staticwebassets\\images\\65c99e67-6317-4608-ab2c-75ea1199545b_Tomatoes.jpg"
+    },
+    {
       "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -7,4 +7,9 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         : base(options)
     {
     }
+
+
+    public DbSet<Product> Products { get; set; }
+
+
 }
