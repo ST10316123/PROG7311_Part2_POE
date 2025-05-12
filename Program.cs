@@ -13,6 +13,11 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.AccessDeniedPath = "/Auth/AccessDenied";
+});
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

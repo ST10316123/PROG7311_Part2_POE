@@ -21,6 +21,13 @@ public class AuthController : Controller
         _signInManager = signInManager;
     }
 
+
+    [HttpGet]
+    public IActionResult AccessDenied()
+    {
+        return View();
+    }
+
     [Authorize(Roles = "Employee")]
     // GET: Register form
     [HttpGet]
