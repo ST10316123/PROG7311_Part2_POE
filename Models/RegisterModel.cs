@@ -11,5 +11,13 @@ public class RegisterModel
     public string Password { get; set; }
 
     [Required]
-    public string Role { get; set; } // "Farmer" or "Employee"
+    public string Role { get; set; } 
+
+
+    [Required]
+    public string FirstName { get; set; }
+
+    [Required]
+    public string LastName { get; set; }
+
 }
