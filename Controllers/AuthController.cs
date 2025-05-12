@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using PROG7311_Part2_POE_1.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 public class AuthController : Controller
 {
@@ -19,6 +21,7 @@ public class AuthController : Controller
         _signInManager = signInManager;
     }
 
+    [Authorize(Roles = "Employee")]
     // GET: Register form
     [HttpGet]
     public IActionResult Register()
@@ -26,6 +29,7 @@ public class AuthController : Controller
         return View();
     }
 
+    [Authorize(Roles = "Employee")]
     // POST: Register user
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -34,20 +38,27 @@ public class AuthController : Controller
         if (!ModelState.IsValid)
             return View(model);
 
-        var user = new ApplicationUser { UserName = model.Email, Email = model.Email,
-        FirstName = model.FirstName,
-        LastName = model.LastName  };
+        var user = new ApplicationUser
+        {
+            UserName = model.Email,
+            Email = model.Email,
+            FirstName = model.FirstName,
+            LastName = model.LastName
+        };
         var result = await _userManager.CreateAsync(user, model.Password);
 
         if (result.Succeeded)
         {
-            if (!await _roleManager.RoleExistsAsync(model.Role))
+
+            const string farmerRole = "Farmer";
+
+            if (!await _roleManager.RoleExistsAsync(farmerRole))
             {
-                await _roleManager.CreateAsync(new IdentityRole(model.Role));
+                await _roleManager.CreateAsync(new IdentityRole(farmerRole));
             }
 
-            await _userManager.AddToRoleAsync(user, model.Role);
-            await _signInManager.SignInAsync(user, isPersistent: false);
+            await _userManager.AddToRoleAsync(user, farmerRole);
+            
             return RedirectToAction("Index", "Home");
         }
 
