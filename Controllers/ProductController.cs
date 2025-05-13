@@ -118,7 +118,7 @@ public async Task<IActionResult> AllProducts(string category, DateTime? startDat
         StartDate = startDate,
         EndDate = endDate,
         Categories = categories,
-        Products = groupedProducts.SelectMany(g => g.Products).ToList() // Optional: flattened list if needed
+        Products = groupedProducts.SelectMany(g => g.Products).ToList()
     };
 
     ViewBag.GroupedProducts = groupedProducts;
