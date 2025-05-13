@@ -1,49 +1,51 @@
 @model CategoryFilterModel
+
 @{
     ViewData["Title"] = "All Products";
     var groupedProducts = ViewBag.GroupedProducts as List<FarmerProductGroupViewModel>;
 }
 
-<!-- Centered Heading -->
-<h2 class="text-center">Farmer's Products</h2>
+<!-- Centered Page Heading -->
+<h2 class="text-center mb-5">Farmer's Products</h2>
 
-<!-- Filter Form (Centered) -->
-<form asp-action="AllProducts" method="get" class="mb-4 d-flex justify-content-center w-100">
-    <div class="form-row justify-content-center w-100">
-        <div class="col-md-3 mb-3">
-            <select name="category" class="form-control w-100">
-                <option value="">-- Select Category --</option>
-                @foreach (var category in Model.Categories)
-                {
-                    <option value="@category" selected="@(Model.Category == category)">
-                        @category
-                    </option>
-                }
-            </select>
+<!-- Filter Form (Properly Centered) -->
+<div class="d-flex justify-content-center mb-4">
+    <form asp-action="AllProducts" method="get" class="w-100" style="max-width: 1000px;">
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <select name="category" class="form-control w-100">
+                    <option value="">-- Select Category --</option>
+                    @foreach (var category in Model.Categories)
+                    {
+                        <option value="@category" selected="@(Model.Category == category)">
+                            @category
+                        </option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <input type="date" name="startDate" class="form-control w-100" value="@(Model.StartDate?.ToString("yyyy-MM-dd"))" />
+            </div>
+            <div class="col-md-3 mb-3">
+                <input type="date" name="endDate" class="form-control w-100" value="@(Model.EndDate?.ToString("yyyy-MM-dd"))" />
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-between">
+                <button type="submit" class="btn btn-primary mr-2">Filter</button>
+                <a asp-action="AllProducts" class="btn btn-secondary">Reset</a>
+            </div>
         </div>
-        <div class="col-md-3 mb-3">
-            <input type="date" name="startDate" class="form-control w-100" value="@(Model.StartDate?.ToString("yyyy-MM-dd"))" />
-        </div>
-        <div class="col-md-3 mb-3">
-            <input type="date" name="endDate" class="form-control w-100" value="@(Model.EndDate?.ToString("yyyy-MM-dd"))" />
-        </div>
-        <!-- Filter and Reset buttons side by side -->
-        <div class="col-md-3 d-flex justify-content-between align-items-center">
-            <button type="submit" class="btn btn-primary">Filter</button>
-            <a asp-action="AllProducts" class="btn btn-secondary ml-2">Reset</a>
-        </div>
-    </div>
-</form>
-
+    </form>
+</div>
 
 <!-- Grouped Product List -->
 @if (groupedProducts != null && groupedProducts.Any())
 {
     foreach (var group in groupedProducts)
     {
-        <h4>@group.FarmerName's Products</h4>
+        <h4 class="text-center mt-5 mb-3">@group.FarmerName's Products</h4>
         <table class="table table-bordered">
-            <thead>
+<thead class="table-success">
+
                 <tr>
                     <th>Name</th>
                     <th>Category</th>
@@ -76,5 +78,5 @@
 }
 else
 {
-    <p>No products found.</p>
+    <p class="text-center">No products found.</p>
 }

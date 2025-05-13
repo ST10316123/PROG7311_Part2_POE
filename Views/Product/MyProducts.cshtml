@@ -7,12 +7,13 @@
 <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0fdf4; /* light green background */
     }
 
     h2 {
         text-align: center;
         color: #2f4f2f;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
     }
 
     .product-table {
@@ -54,30 +55,32 @@
     }
 </style>
 
-<h2>My Products</h2>
+<h2 class="text-center">My Products</h2>
 
-<div class="table-responsive">
-    <table class="table table-bordered table-striped product-table">
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Category</th>
-                <th>Production Date</th>
-                <th>Image</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in Model)
-            {
+<div class="container-fluid mb-5">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="table-success">
                 <tr>
-                    <td>@product.Name</td>
-                    <td>@product.Category</td>
-                    <td>@product.ProductionDate.ToShortDateString()</td>
-                    <td>
-                        <img src="@product.ImagePath" class="product-image" alt="Product Image" />
-                    </td>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Production Date</th>
+                    <th>Image</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Category</td>
+                        <td>@product.ProductionDate.ToShortDateString()</td>
+                        <td>
+                            <img src="@product.ImagePath" class="product-image" alt="Product Image" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

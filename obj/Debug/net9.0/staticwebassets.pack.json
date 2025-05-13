@@ -25,12 +25,28 @@
       "PackagePath": "staticwebassets\\images\\65c99e67-6317-4608-ab2c-75ea1199545b_Tomatoes.jpg"
     },
     {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\Pineapples.jpg",
+      "PackagePath": "staticwebassets\\images\\Pineapples.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\avocadoes.jpg",
+      "PackagePath": "staticwebassets\\images\\avocadoes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\beef.jpg",
+      "PackagePath": "staticwebassets\\images\\beef.jpg"
+    },
+    {
       "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\c945d819-2f6f-4bf3-bd19-600077e23b05_cabbages.jpg",
       "PackagePath": "staticwebassets\\images\\c945d819-2f6f-4bf3-bd19-600077e23b05_cabbages.jpg"
     },
     {
       "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\cabbages.jpg",
       "PackagePath": "staticwebassets\\images\\cabbages.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\chicken-eggs.jpg",
+      "PackagePath": "staticwebassets\\images\\chicken-eggs.jpg"
     },
     {
       "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\contact-calling.jpg",
@@ -41,8 +57,20 @@
       "PackagePath": "staticwebassets\\images\\farmers.jpg"
     },
     {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\honey.jpg",
+      "PackagePath": "staticwebassets\\images\\honey.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\kidney-beans.jpg",
+      "PackagePath": "staticwebassets\\images\\kidney-beans.jpg"
+    },
+    {
       "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\marketplace.jpg",
       "PackagePath": "staticwebassets\\images\\marketplace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\milk.jpg",
+      "PackagePath": "staticwebassets\\images\\milk.jpg"
     },
     {
       "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\solar-panels.jpg",

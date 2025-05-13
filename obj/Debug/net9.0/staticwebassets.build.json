@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DmFRpr/VKRZ+hKzwEhyNF1HifUd7XcIi+lXv0fsYSkg=",
+  "Hash": "lN1daui9bw9RxZGjPKyE3xQwZj1lVV3nXUU3TlqdTPs=",
   "Source": "PROG7311_Part2_POE-1",
   "BasePath": "_content/PROG7311_Part2_POE-1",
   "Mode": "Default",
@@ -1508,6 +1508,48 @@
       "OriginalItemSpec": "wwwroot\\images\\65c99e67-6317-4608-ab2c-75ea1199545b_Tomatoes.jpg"
     },
     {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\avocadoes.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/avocadoes#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aogid0gqpz",
+      "Integrity": "6tGCBUdq23AZUI+DRnVID7WlcU0nBAb+yGzi7aktnSM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avocadoes.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\beef.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/beef#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tsjsblrenv",
+      "Integrity": "PeJ+ks1MGUpE3/G1Ui5HSU0sovgvn4FZ2efUp8Qe+r8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\beef.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\c945d819-2f6f-4bf3-bd19-600077e23b05_cabbages.jpg",
       "SourceId": "PROG7311_Part2_POE-1",
       "SourceType": "Discovered",
@@ -1548,6 +1590,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\cabbages.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\chicken-eggs.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/chicken-eggs#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3mrgjn6r6h",
+      "Integrity": "NUEDmQyGYZfXb0EmhM7MKDh9+a31ltk2rpxw/VK0fI8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\chicken-eggs.jpg"
     },
     {
       "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\contact-calling.jpg",
@@ -1592,6 +1655,48 @@
       "OriginalItemSpec": "wwwroot\\images\\farmers.jpg"
     },
     {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\honey.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/honey#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7dp4t3gz9p",
+      "Integrity": "a0I7odPh1f40GRSsVd5uBlxhic7O/SfIuUr1Nxl1ykA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\honey.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\kidney-beans.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/kidney-beans#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2ggbppz8sa",
+      "Integrity": "AhV4WxO8B15+uleNe+fAV3+S6K8R6JOTfFtbOSO/2hw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\kidney-beans.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\marketplace.jpg",
       "SourceId": "PROG7311_Part2_POE-1",
       "SourceType": "Discovered",
@@ -1611,6 +1716,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\marketplace.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\milk.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/milk#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l8p41vhp95",
+      "Integrity": "O9rHDkCWtB/u1HWOhk3dO7QjP9UmskTDwA6mq0wFF3Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\milk.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\Pineapples.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/Pineapples#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l0y9c9nfwc",
+      "Integrity": "i2vl2xVJij21iaMyThDdsVEzJk7jhAKMPWU+PxzqjzI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Pineapples.jpg"
     },
     {
       "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\solar-panels.jpg",
@@ -3780,6 +3927,170 @@
       ]
     },
     {
+      "Route": "images/avocadoes.aogid0gqpz.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\avocadoes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6tGCBUdq23AZUI+DRnVID7WlcU0nBAb+yGzi7aktnSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 22:42:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aogid0gqpz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/avocadoes.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6tGCBUdq23AZUI+DRnVID7WlcU0nBAb+yGzi7aktnSM="
+        }
+      ]
+    },
+    {
+      "Route": "images/avocadoes.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\avocadoes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6tGCBUdq23AZUI+DRnVID7WlcU0nBAb+yGzi7aktnSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 22:42:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6tGCBUdq23AZUI+DRnVID7WlcU0nBAb+yGzi7aktnSM="
+        }
+      ]
+    },
+    {
+      "Route": "images/beef.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\beef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PeJ+ks1MGUpE3/G1Ui5HSU0sovgvn4FZ2efUp8Qe+r8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:11:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PeJ+ks1MGUpE3/G1Ui5HSU0sovgvn4FZ2efUp8Qe+r8="
+        }
+      ]
+    },
+    {
+      "Route": "images/beef.tsjsblrenv.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\beef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PeJ+ks1MGUpE3/G1Ui5HSU0sovgvn4FZ2efUp8Qe+r8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:11:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tsjsblrenv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beef.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PeJ+ks1MGUpE3/G1Ui5HSU0sovgvn4FZ2efUp8Qe+r8="
+        }
+      ]
+    },
+    {
       "Route": "images/c945d819-2f6f-4bf3-bd19-600077e23b05_cabbages.7v125ogq12.jpg",
       "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\c945d819-2f6f-4bf3-bd19-600077e23b05_cabbages.jpg",
       "Selectors": [],
@@ -3940,6 +4251,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k="
+        }
+      ]
+    },
+    {
+      "Route": "images/chicken-eggs.3mrgjn6r6h.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\chicken-eggs.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7020"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NUEDmQyGYZfXb0EmhM7MKDh9+a31ltk2rpxw/VK0fI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3mrgjn6r6h"
+        },
+        {
+          "Name": "label",
+          "Value": "images/chicken-eggs.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NUEDmQyGYZfXb0EmhM7MKDh9+a31ltk2rpxw/VK0fI8="
+        }
+      ]
+    },
+    {
+      "Route": "images/chicken-eggs.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\chicken-eggs.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7020"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NUEDmQyGYZfXb0EmhM7MKDh9+a31ltk2rpxw/VK0fI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NUEDmQyGYZfXb0EmhM7MKDh9+a31ltk2rpxw/VK0fI8="
         }
       ]
     },
@@ -4108,6 +4501,170 @@
       ]
     },
     {
+      "Route": "images/honey.7dp4t3gz9p.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\honey.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a0I7odPh1f40GRSsVd5uBlxhic7O/SfIuUr1Nxl1ykA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:12:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7dp4t3gz9p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/honey.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a0I7odPh1f40GRSsVd5uBlxhic7O/SfIuUr1Nxl1ykA="
+        }
+      ]
+    },
+    {
+      "Route": "images/honey.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\honey.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a0I7odPh1f40GRSsVd5uBlxhic7O/SfIuUr1Nxl1ykA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:12:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-a0I7odPh1f40GRSsVd5uBlxhic7O/SfIuUr1Nxl1ykA="
+        }
+      ]
+    },
+    {
+      "Route": "images/kidney-beans.2ggbppz8sa.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\kidney-beans.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhV4WxO8B15+uleNe+fAV3+S6K8R6JOTfFtbOSO/2hw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:13:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2ggbppz8sa"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kidney-beans.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AhV4WxO8B15+uleNe+fAV3+S6K8R6JOTfFtbOSO/2hw="
+        }
+      ]
+    },
+    {
+      "Route": "images/kidney-beans.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\kidney-beans.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhV4WxO8B15+uleNe+fAV3+S6K8R6JOTfFtbOSO/2hw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:13:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AhV4WxO8B15+uleNe+fAV3+S6K8R6JOTfFtbOSO/2hw="
+        }
+      ]
+    },
+    {
       "Route": "images/marketplace.7awfe99kyo.jpg",
       "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\marketplace.jpg",
       "Selectors": [],
@@ -4186,6 +4743,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g="
+        }
+      ]
+    },
+    {
+      "Route": "images/milk.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\milk.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99899"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O9rHDkCWtB/u1HWOhk3dO7QjP9UmskTDwA6mq0wFF3Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:13:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O9rHDkCWtB/u1HWOhk3dO7QjP9UmskTDwA6mq0wFF3Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/milk.l8p41vhp95.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\milk.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99899"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O9rHDkCWtB/u1HWOhk3dO7QjP9UmskTDwA6mq0wFF3Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 23:13:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l8p41vhp95"
+        },
+        {
+          "Name": "label",
+          "Value": "images/milk.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O9rHDkCWtB/u1HWOhk3dO7QjP9UmskTDwA6mq0wFF3Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/Pineapples.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\Pineapples.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i2vl2xVJij21iaMyThDdsVEzJk7jhAKMPWU+PxzqjzI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:58:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i2vl2xVJij21iaMyThDdsVEzJk7jhAKMPWU+PxzqjzI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Pineapples.l0y9c9nfwc.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\Pineapples.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i2vl2xVJij21iaMyThDdsVEzJk7jhAKMPWU+PxzqjzI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:58:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l0y9c9nfwc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Pineapples.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i2vl2xVJij21iaMyThDdsVEzJk7jhAKMPWU+PxzqjzI="
         }
       ]
     },
