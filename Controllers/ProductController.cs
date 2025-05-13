@@ -37,10 +37,10 @@ public class ProductController : Controller
         string uniqueFileName = null;
         if (model.ImageFile != null)
         {
-            string uploadsFolder = Path.Combine(_env.WebRootPath, "images");
-            Directory.CreateDirectory(uploadsFolder); // ensure folder exists
-            uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ImageFile.FileName;
-            string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+            string uploadsFolder = Path.Combine(_env.WebRootPath, "images");    //writes address into wwwroot/images folder
+            Directory.CreateDirectory(uploadsFolder);   // ensure folder exists
+            uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ImageFile.FileName;    //provides a unique file name
+            string filePath = Path.Combine(uploadsFolder, uniqueFileName);  //writes full path to the image
             using (var fileStream = new FileStream(filePath, FileMode.Create))
             {
                 await model.ImageFile.CopyToAsync(fileStream);
@@ -66,22 +66,28 @@ public class ProductController : Controller
 
 
     [Authorize(Roles = "Employee")]
-    public async Task<IActionResult> AllProducts()
-    {
-        var products = await _context.Products
-            .Include(p => p.Farmer)
-            .Select(p => new ProductListViewModel
+public async Task<IActionResult> AllProducts()
+{
+    var groupedProducts = await _context.Products
+        .Include(p => p.Farmer)
+        .GroupBy(p => new { p.FarmerId, p.Farmer.FirstName, p.Farmer.LastName })
+        .Select(g => new FarmerProductGroupViewModel
+        {
+            FarmerName = g.Key.FirstName + " " + g.Key.LastName,
+            Products = g.Select(p => new ProductListViewModel
             {
                 Name = p.Name,
                 Category = p.Category,
                 ProductionDate = p.ProductionDate,
                 ImagePath = p.ImagePath,
-                FarmerName = p.Farmer.FirstName + " " + p.Farmer.LastName
-            })
-            .ToListAsync();
+                FarmerName = g.Key.FirstName + " " + g.Key.LastName
+            }).ToList()
+        })
+        .ToListAsync();
 
-        return View(products);
-    }
+    return View(groupedProducts);
+}
+
 
     [Authorize(Roles = "Farmer")]
     public async Task<IActionResult> MyProducts()
