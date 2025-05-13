@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using PROG7311_Part2_POE_1.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,5 +46,20 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+
+// **Seeder Execution:**
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    var env = services.GetRequiredService<IWebHostEnvironment>();
+
+    // Call the seeders to add the data
+    await EmployeeSeeder.SeedAsync(userManager, roleManager);
+    await FarmerSeeder.SeedAsync(userManager, roleManager);
+    await ProductSeeder.SeedAsync(context, userManager, env);
+}
 
 app.Run();
