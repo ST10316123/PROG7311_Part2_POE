@@ -17,9 +17,14 @@ html {
   min-height: 100%;
 }
 
+
 body {
+  background-color: #a6e0a6; /* Very soft green */
+  margin: 0;
   margin-bottom: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
@@ -28,4 +33,95 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+/* Custom styles for navbar */
+.navbar-custom {
+  background-color: #0dcd5a; /* Blue background */
+}
+
+  .navbar-custom .navbar-nav .nav-link {
+      color: #ffffff !important; /* Bright white text */
+  }
+
+      .navbar-custom .navbar-nav .nav-link.active {
+          color: #f8f9fa !important; /* Slightly lighter white for active link */
+      }
+
+  .navbar-custom .navbar-brand {
+      color: #ffffff !important; /* Bright white text for brand */
+  }
+
+  .navbar-custom .navbar-toggler-icon {
+      filter: invert(1); /* Invert color for the toggler icon to be visible on dark background */
+  }
+
+
+.btn-login {
+  background-color: #ffeb3b; /* Yellow background */
+  color: #000000; /* Black text for better contrast */
+  border-color: #ffeb3b; /* Border color to match background */
+  padding: 0.5rem 0.75rem; /* Adjust padding to reduce button size */
+  font-size: 1rem; /* Adjust font size if needed */
+  border-radius: 0.25rem; /* Slightly rounded corners */
+}
+
+  .btn-login:hover {
+      background-color: #fdd835; /* Darker yellow on hover */
+      color: #000000; /* Black text on hover */
+      border-color: #fdd835; /* Border color to match background on hover */
+  }
+
+  .btn-login:focus {
+      box-shadow: 0 0 0 0.1rem rgba(255, 235, 59, 0.5); /* Light yellow shadow on focus, reduced size */
+  }
+
+
+.btn-sm {
+  font-size: 1rem; 
+  padding: 0.100rem 0.35rem; 
+}
+
+.table .btn-info {
+  background-color: #17a2b8; /* Customize button color */
+  border-color: #17a2b8; /* Customize border color */
+}
+
+.table .btn-success {
+  background-color: #28a745; /* Customize button color */
+  border-color: #28a745; /* Customize border color */
+}
+
+.table .btn-danger {
+  background-color: #dc3545; /* Customize button color */
+  border-color: #dc3545; /* Customize border color */
+}
+
+/* Custom styling for the Home link */
+.home-link {
+  background-color: black; /* White background */
+  color: black; /* Dark text */
+  font-weight: bold; /* Bold text */
+  padding: 0.5rem 0.75rem; /* Padding for button-like appearance */
+  font-size: 1rem; /* Font size adjustment */
+  border-radius: 0.25rem; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Style other links to be bold and dark */
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: black; /* Dark color for text */
+}
+
+/* Style other links to be bold */
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: #343a40; /* Dark color */
+}
+
+/* Optional: Change background color of Home link on hover */
+.home-link:hover {
+  color: #f8f9fa; /* Lighten the color on hover if needed */
+  text-decoration: underline;
 }

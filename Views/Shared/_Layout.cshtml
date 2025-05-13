@@ -8,61 +8,78 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PROG7311_Part2_POE_1.styles.css" asp-append-version="true" />
+    <link href="~/bootstrap.min (1).css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-custom border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PROG7311_Part2_POE_1</a>
+                <a class="navbar-brand home-link" asp-area="" asp-controller="Home" asp-action="Index">Homepage</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+
+
+                        @if (!User.Identity.IsAuthenticated)
+    {
+
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link btn btn-outline-primary mx-1" asp-area="" asp-controller="Home" asp-action="Privacy">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+
+    }
+
+else if (User.IsInRole("Farmer"))
+{
+    <li class="nav-item">
+        <a class="nav-link btn btn-outline-success mx-1" asp-controller="Product" asp-action="Create">Add a Product</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link btn btn-outline-primary mx-1" asp-controller="Product" asp-action="MyProducts">View my Added Product</a>
+    </li>
+}
+
+
+else
+{
+    <li class="nav-item">
+        <a class="nav-link btn btn-warning text-white mx-1" asp-controller="Auth" asp-action="Register">Register a Farmer</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link btn btn-info text-white mx-1" asp-controller="Product" asp-action="AllProducts">View Farmers' Products</a>
+    </li>
+}
+
+
+
                     </ul>
                 </div>
 
 
                 <ul class="navbar-nav">
     @if (User.Identity.IsAuthenticated)
-    {
-        <li class="nav-item">
-            <span class="nav-link text-muted">Hello, @User.Identity.Name!</span>
-        </li>
+{
+    var username = User.Identity.Name;
+    var displayName = username?.Split('@')[0];
 
-        @if (User.IsInRole("Farmer"))
-        {
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Farmer" asp-action="Dashboard">Farmer Dashboard</a>
-            </li>
-        }
-        else if (User.IsInRole("Employee"))
-        {
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Employee" asp-action="Dashboard">Employee Panel</a>
-            </li>
-        }
+    <li class="nav-item">
+        <span class="nav-link text-muted">Hello, @displayName!</span>
+    </li>
 
-        <li class="nav-item">
-            <form asp-action="Logout" asp-controller="Auth" method="post" style="display:inline">
-                <button type="submit" class="nav-link btn btn-link">Logout</button>
-            </form>
-        </li>
-    }
+    <li class="nav-item">
+        <form asp-action="Logout" asp-controller="Auth" method="post" style="display:inline">
+            <button type="submit" class="btn btn-login">Logout</button>
+        </form>
+    </li>
+}
     else
     {
         <li class="nav-item">
-            <a class="nav-link" asp-controller="Auth" asp-action="Login">Login</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" asp-controller="Auth" asp-action="Register">Register</a>
+            <a class="btn btn-login" asp-controller="Auth" asp-action="Login">Login</a>
         </li>
     }
 </ul>
@@ -80,7 +97,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - PROG7311_Part2_POE_1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

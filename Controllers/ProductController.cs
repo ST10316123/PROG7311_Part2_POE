@@ -70,7 +70,7 @@ public class ProductController : Controller
 [HttpGet]
 public async Task<IActionResult> AllProducts(string category, DateTime? startDate, DateTime? endDate)
 {
-    // Get all distinct categories for the dropdown
+    //Gets all distinct categories for the dropdown
     var categories = await _context.Products
         .Select(p => p.Category)
         .Distinct()

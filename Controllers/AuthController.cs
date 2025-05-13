@@ -92,7 +92,7 @@ public class AuthController : Controller
         if (!ModelState.IsValid)
             return View(model);
 
-        var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+        var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
 
         if (result.Succeeded)
         {
@@ -109,6 +109,6 @@ public class AuthController : Controller
     public async Task<IActionResult> Logout()
     {
         await _signInManager.SignOutAsync();
-        return RedirectToAction("Login", "Auth");
+        return RedirectToAction("Index", "Home");
     }
 }

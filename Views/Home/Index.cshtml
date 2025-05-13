@@ -1,8 +1,130 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home - Agri-Connect";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    body {
+        color: #2f4f2f;
+        margin: 0;
+        padding: 0;
+        background-color: #c5ebc5; /* Very soft green */
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hero {
+        background-color: #d4edda;
+        padding: 3rem 2rem;
+        margin-bottom: 2rem;
+        border-radius: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .section img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 15px;
+        margin: 1rem;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1s ease;
+    }
+
+    .section-content {
+        flex: 1;
+        min-width: 300px;
+        padding: 1rem 2rem;
+        max-width: 600px;
+    }
+
+    .fade-in {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .btn-learn {
+        background-color: #28a745;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        text-decoration: none;
+    }
+
+    .btn-learn:hover {
+        background-color: #218838;
+    }
+</style>
+
+<div class="container-fluid">
+
+    <div class="hero">
+        <h1 class="display-4">Welcome to Agri-Connect</h1>
+        <p class="lead">Empowering sustainable farming through technology and green energy solutions.</p>
+    </div>
+
+    <div class="section" id="Homepage">
+        <img src="~/images/farmers.jpg" alt="Farmers collaborating" class="fade-target" />
+        <div class="section-content">
+            <h2>About Agri-Connect</h2>
+            <p>
+                Agri-Connect is a platform that bridges the gap between farmers and green energy providers.
+                By connecting agricultural producers with clean tech suppliers, we foster a more sustainable and efficient farming ecosystem.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="~/images/solar-panels.jpg" alt="Solar panels on farm" class="fade-target" />
+        <div class="section-content">
+            <h2>Promoting Renewable Energy</h2>
+            <p>
+                Our mission is to reduce environmental impact in agriculture. We support initiatives involving solar, wind, and bioenergy
+                solutions to power farms efficiently.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="~/images/marketplace.jpg" alt="Marketplace for farm products" class="fade-target" />
+        <div class="section-content">
+            <h2>Connected Marketplace</h2>
+            <p>
+                With Agri-Connect, farmers can showcase their products, connect with customers, and adopt innovations that help their
+                businesses thrive sustainably.
+            </p>
+        </div>
+    </div>
+
 </div>
+
+@section Scripts {
+    <script>
+        window.addEventListener('load', () => {
+            const targets = document.querySelectorAll('.fade-target');
+            targets.forEach((img, index) => {
+                setTimeout(() => {
+                    img.classList.add('fade-in');
+                }, index * 300);
+            });
+        });
+    </script>
+}

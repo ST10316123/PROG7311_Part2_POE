@@ -9,8 +9,8 @@ public class FarmerSeeder
         const string farmerRole = "Farmer";
         var farmers = new List<ApplicationUser>
         {
-            new ApplicationUser { UserName = "farmer1@example.com", Email = "farmer1@example.com", FirstName = "John", LastName = "Doe" },
-            new ApplicationUser { UserName = "farmer2@example.com", Email = "farmer2@example.com", FirstName = "Jane", LastName = "Smith" }
+            new ApplicationUser { UserName = "John@mail.com", Email = "John@mail.com", FirstName = "John", LastName = "Doe" },
+            new ApplicationUser { UserName = "Jane@mail.com", Email = "Jane@mail.com", FirstName = "Jane", LastName = "Smith" }
         };
 
         if (!await roleManager.RoleExistsAsync(farmerRole))

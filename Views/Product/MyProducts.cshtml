@@ -4,28 +4,80 @@
     ViewData["Title"] = "My Products";
 }
 
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        color: #2f4f2f;
+        margin-bottom: 2rem;
+    }
+
+    .product-table {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .product-table th {
+        background-color: #e9f5ec;
+        color: #2f4f2f;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .product-table td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .product-image {
+        width: 120px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 6px;
+        opacity: 0;
+        animation: fadeInImage 2.5s ease forwards;
+    }
+
+    tr:hover {
+        background-color: #f1fdf4;
+    }
+
+    @@keyframes fadeInImage {
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
 <h2>My Products</h2>
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Product</th>
-            <th>Category</th>
-            <th>Production Date</th>
-            <th>Image</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var product in Model)
-        {
+<div class="table-responsive">
+    <table class="table table-bordered table-striped product-table">
+        <thead>
             <tr>
-                <td>@product.Name</td>
-                <td>@product.Category</td>
-                <td>@product.ProductionDate.ToShortDateString()</td>
-                <td>
-                    <img src="@product.ImagePath" width="120" height="100" style="object-fit: cover;" />
-                </td>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Production Date</th>
+                <th>Image</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Category</td>
+                    <td>@product.ProductionDate.ToShortDateString()</td>
+                    <td>
+                        <img src="@product.ImagePath" class="product-image" alt="Product Image" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

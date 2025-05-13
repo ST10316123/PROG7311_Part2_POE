@@ -1,30 +1,105 @@
 @model CreateProductViewModel
 
-<h2>Add Product</h2>
+@{
+    ViewData["Title"] = "Add Product";
+}
 
-<form asp-action="Create" enctype="multipart/form-data" method="post">
-    <div class="form-group">
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger" />
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0;
+    }
+
+    .product-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 4rem;
+        min-height: 100vh;
+    }
+
+    .product-card {
+        background-color: #ffffff;
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        animation: fadeIn 0.8s ease-in-out;
+        border: 2px solid #dee2e6;
+    }
+
+    .product-card h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #2f4f2f;
+        font-weight: 600;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+        border-radius: 6px;
+        padding: 0.6rem;
+    }
+
+    .btn-primary {
+        background-color: #28a745;
+        border: none;
+        width: 100%;
+        padding: 0.75rem;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #218838;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<div class="product-wrapper">
+    <div class="product-card">
+        <h2>Add Product</h2>
+        <form asp-action="Create" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Category"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProductionDate"></label>
+                <input asp-for="ProductionDate" class="form-control" type="date" />
+                <span asp-validation-for="ProductionDate" class="text-danger" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ImageFile">Upload Image</label>
+                <input asp-for="ImageFile" class="form-control" type="file" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
     </div>
-
-    <div class="form-group">
-        <label asp-for="Category"></label>
-        <input asp-for="Category" class="form-control" />
-        <span asp-validation-for="Category" class="text-danger" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ProductionDate"></label>
-        <input asp-for="ProductionDate" class="form-control" type="date" />
-        <span asp-validation-for="ProductionDate" class="text-danger" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ImageFile">Upload Image</label>
-        <input asp-for="ImageFile" class="form-control" type="file" />
-    </div>
-
-    <button type="submit" class="btn btn-primary">Add Product</button>
-</form>
+</div>

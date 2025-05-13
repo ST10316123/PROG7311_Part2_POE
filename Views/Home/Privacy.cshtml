@@ -1,6 +1,62 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Contact Us - Agri-Connect";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<style>
+    body {
+        color: #1a1a1a;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .contact-info {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .contact-info h2 {
+        color: #28a745;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+    }
+
+    .contact-image {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .contact-image img {
+        max-width: 40%;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+</style>
+
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Phone:</strong> +27 12 345 6789</p>
+        <p><strong>Email:</strong> support@agri-connect.co.za</p>
+        <p><strong>Address:</strong> 123 Green Farm Lane, Westville, South Africa</p>
+        <p>We're here to help you with any inquiries or support related to farming or green energy technology.</p>
+
+        <a asp-controller="Home" asp-action="Index" class="btn btn-success mx-1">Return to Home</a>
+    </div>
+
+    <div class="contact-image">
+        <img src="~/images/contact-calling.jpg" alt="Person making a phone call" />
+    </div>
+</div>
