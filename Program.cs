@@ -48,18 +48,18 @@ app.MapControllerRoute(
 
 
 // **Seeder Execution:**
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-    var context = services.GetRequiredService<ApplicationDbContext>();
-    var env = services.GetRequiredService<IWebHostEnvironment>();
+// using (var scope = app.Services.CreateScope())
+// {
+//     var services = scope.ServiceProvider;
+//     var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+//     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+//     var context = services.GetRequiredService<ApplicationDbContext>();
+//     var env = services.GetRequiredService<IWebHostEnvironment>();
 
-    // Call the seeders to add the data
-    await EmployeeSeeder.SeedAsync(userManager, roleManager);
-    await FarmerSeeder.SeedAsync(userManager, roleManager);
-    await ProductSeeder.SeedAsync(context, userManager, env);
-}
+//     // Call the seeders to add the data
+//     await EmployeeSeeder.SeedAsync(userManager, roleManager);
+//     await FarmerSeeder.SeedAsync(userManager, roleManager);
+//     await ProductSeeder.SeedAsync(context, userManager, env);
+// }
 
 app.Run();

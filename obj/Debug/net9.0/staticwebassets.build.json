@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C7jMtJH4necMn6s1YSRmcgewQT5irRF9LihbgtRn7tI=",
+  "Hash": "NUIwkLYxp3P5+E9AyABZdShYbkY5dG99MUWLPp4KMVQ=",
   "Source": "PROG7311_Part2_POE-1",
   "BasePath": "_content/PROG7311_Part2_POE-1",
   "Mode": "Default",
@@ -1485,6 +1485,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\65c99e67-6317-4608-ab2c-75ea1199545b_Tomatoes.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\cabbages.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/cabbages#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7v125ogq12",
+      "Integrity": "83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cabbages.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\tomatoes.jpg",
+      "SourceId": "PROG7311_Part2_POE-1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\",
+      "BasePath": "_content/PROG7311_Part2_POE-1",
+      "RelativePath": "images/tomatoes#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mrrz0neegi",
+      "Integrity": "rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tomatoes.jpg"
     },
     {
       "Identity": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\js\\site.js",
@@ -3526,6 +3568,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Y17bHoOkPN/r51+pyBMcd1GW1UjgXIPbL88+cIbH3WA="
+        }
+      ]
+    },
+    {
+      "Route": "images/cabbages.7v125ogq12.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\cabbages.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "393543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:26:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7v125ogq12"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cabbages.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k="
+        }
+      ]
+    },
+    {
+      "Route": "images/cabbages.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\cabbages.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "393543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:26:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k="
+        }
+      ]
+    },
+    {
+      "Route": "images/tomatoes.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\tomatoes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:26:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI="
+        }
+      ]
+    },
+    {
+      "Route": "images/tomatoes.mrrz0neegi.jpg",
+      "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\tomatoes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:26:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mrrz0neegi"
+        },
+        {
+          "Name": "label",
+          "Value": "images/tomatoes.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI="
         }
       ]
     },

@@ -1061,6 +1061,170 @@
       ]
     },
     {
+      "Route": "images/cabbages.7v125ogq12.jpg",
+      "AssetFile": "images/cabbages.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "393543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:26:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7v125ogq12"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k="
+        },
+        {
+          "Name": "label",
+          "Value": "images/cabbages.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/cabbages.jpg",
+      "AssetFile": "images/cabbages.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "393543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:26:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-83p9aYApYP0Bi21WjUCkuB+dAsJiW5kNVHkHtRH8G4k="
+        }
+      ]
+    },
+    {
+      "Route": "images/tomatoes.jpg",
+      "AssetFile": "images/tomatoes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:26:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI="
+        }
+      ]
+    },
+    {
+      "Route": "images/tomatoes.mrrz0neegi.jpg",
+      "AssetFile": "images/tomatoes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 10:26:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mrrz0neegi"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rmzv4cHcXTWoATDia0bPDEkBreZ/H1QSZaBPa7mAkBI="
+        },
+        {
+          "Name": "label",
+          "Value": "images/tomatoes.jpg"
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js.gz",
       "Selectors": [

@@ -66,11 +66,37 @@ public class ProductController : Controller
     }
 
 
-    [Authorize(Roles = "Employee")]
-public async Task<IActionResult> AllProducts()
+[Authorize(Roles = "Employee")]
+[HttpGet]
+public async Task<IActionResult> AllProducts(string category, DateTime? startDate, DateTime? endDate)
 {
-    var groupedProducts = await _context.Products
+    // Get all distinct categories for the dropdown
+    var categories = await _context.Products
+        .Select(p => p.Category)
+        .Distinct()
+        .ToListAsync();
+
+    var query = _context.Products
         .Include(p => p.Farmer)
+        .AsQueryable();
+
+    // Apply filters if provided
+    if (!string.IsNullOrEmpty(category))
+    {
+        query = query.Where(p => p.Category == category);
+    }
+
+    if (startDate.HasValue)
+    {
+        query = query.Where(p => p.ProductionDate >= startDate.Value);
+    }
+
+    if (endDate.HasValue)
+    {
+        query = query.Where(p => p.ProductionDate <= endDate.Value);
+    }
+
+    var groupedProducts = await query
         .GroupBy(p => new { p.FarmerId, p.Farmer.FirstName, p.Farmer.LastName })
         .Select(g => new FarmerProductGroupViewModel
         {
@@ -86,8 +112,21 @@ public async Task<IActionResult> AllProducts()
         })
         .ToListAsync();
 
-    return View(groupedProducts);
+    var model = new CategoryFilterModel
+    {
+        Category = category,
+        StartDate = startDate,
+        EndDate = endDate,
+        Categories = categories,
+        Products = groupedProducts.SelectMany(g => g.Products).ToList() // Optional: flattened list if needed
+    };
+
+    ViewBag.GroupedProducts = groupedProducts;
+
+    return View(model);
 }
+
+
 
 
     [Authorize(Roles = "Farmer")]

@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\images\\65c99e67-6317-4608-ab2c-75ea1199545b_Tomatoes.jpg"
     },
     {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\cabbages.jpg",
+      "PackagePath": "staticwebassets\\images\\cabbages.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\tomatoes.jpg",
+      "PackagePath": "staticwebassets\\images\\tomatoes.jpg"
+    },
+    {
       "Id": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
