@@ -111,7 +111,7 @@ Example:
 
 
 
-### 5. Ensure the ffg lines are uncommented in the program.cs file
+### 5. Ensure the ffg lines in the program.cs file are not commented out
 ```bash
 
 using (var scope = app.Services.CreateScope())
