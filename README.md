@@ -146,8 +146,3 @@ Copy
 Edit
 
 ---
-
-Let me know if you’d like:
-- To generate this as a downloadable `.md` file.
-- Separate credentials per seeded user.
-- Instructions for Docker support or deployment.
