@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
+//Where user registers
+//Attributes needed when registering
 public class RegisterModel
 {
     [Required]

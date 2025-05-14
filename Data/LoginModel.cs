@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
-
+//Where user logs in
+//Details needed when logging in
 public class LoginModel
 {
     [Required]
@@ -11,5 +12,4 @@ public class LoginModel
     [DataType(DataType.Password)]
     public string Password { get; set; }
 
-    public bool RememberMe { get; set; }
 }

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using PROG7311_Part2_POE_1.Models;
 using Microsoft.AspNetCore.Authorization;
 
-
+//Manages the registration and login functions
 public class AuthController : Controller
 {
     private readonly UserManager<ApplicationUser> _userManager;
@@ -21,13 +21,15 @@ public class AuthController : Controller
         _signInManager = signInManager;
     }
 
-
+    //Routes user to page if user does not have access
     [HttpGet]
     public IActionResult AccessDenied()
     {
         return View();
     }
 
+    //Ensures that only a user that has the role of an Employee can register a user
+    //Aligns with project requirements
     [Authorize(Roles = "Employee")]
     // GET: Register form
     [HttpGet]
@@ -57,6 +59,7 @@ public class AuthController : Controller
         if (result.Succeeded)
         {
 
+            //constant role of Farmer is given here since Employee will only add farmers to the system
             const string farmerRole = "Farmer";
 
             if (!await _roleManager.RoleExistsAsync(farmerRole))
@@ -103,7 +106,7 @@ public class AuthController : Controller
         return View(model);
     }
 
-    // Logout
+    // Logs out user
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Logout()

@@ -37,6 +37,9 @@ public class ProductController : Controller
 
         string uniqueFileName = null;
         if (model.ImageFile != null)
+
+        //in this block of code, the CreateProductViewModel adds the image to inside the wwwroot/images/ folder
+        //it also creates the image path which is saved as a string in the products table
         {
             string uploadsFolder = Path.Combine(_env.WebRootPath, "images");    //writes address into wwwroot/images folder
             Directory.CreateDirectory(uploadsFolder);   // ensure folder exists
@@ -44,7 +47,7 @@ public class ProductController : Controller
             string filePath = Path.Combine(uploadsFolder, uniqueFileName);  //writes full path to the image
             using (var fileStream = new FileStream(filePath, FileMode.Create))
             {
-                await model.ImageFile.CopyToAsync(fileStream);
+                await model.ImageFile.CopyToAsync(fileStream);  //adds images to the folder
             }
         }
 
@@ -55,8 +58,8 @@ public class ProductController : Controller
             Name = model.Name,
             Category = model.Category,
             ProductionDate = model.ProductionDate,
-            ImagePath = "/images/" + uniqueFileName,
-            FarmerId = user.Id
+            ImagePath = "/images/" + uniqueFileName, //taken from the block of code above
+            FarmerId = user.Id  //using UserManager to get the farmer ID
         };
 
         _context.Products.Add(product);
@@ -66,83 +69,84 @@ public class ProductController : Controller
     }
 
 
-[Authorize(Roles = "Employee")]
-[HttpGet]
-public async Task<IActionResult> AllProducts(string category, DateTime? startDate, DateTime? endDate)
-{
-    //Gets all distinct categories for the dropdown
-    var categories = await _context.Products
-        .Select(p => p.Category)
-        .Distinct()
-        .ToListAsync();
-
-    var query = _context.Products
-        .Include(p => p.Farmer)
-        .AsQueryable();
-
-    // Apply filters if provided
-    if (!string.IsNullOrEmpty(category))
+    //method for displaying the list of all farmer's products
+    [Authorize(Roles = "Employee")]
+    [HttpGet]
+    public async Task<IActionResult> AllProducts(string category, DateTime? startDate, DateTime? endDate)
     {
-        query = query.Where(p => p.Category == category);
-    }
+        //Gets all distinct categories for the dropdown menu
+        var categories = await _context.Products.Select(p => p.Category).Distinct().ToListAsync();
 
-    if (startDate.HasValue)
-    {
-        query = query.Where(p => p.ProductionDate >= startDate.Value);
-    }
+        //initializes a base query to get products and includes their related Farmer entity
+        var query = _context.Products
+            .Include(p => p.Farmer)
+            .AsQueryable();
 
-    if (endDate.HasValue)
-    {
-        query = query.Where(p => p.ProductionDate <= endDate.Value);
-    }
-
-    var groupedProducts = await query
-        .GroupBy(p => new { p.FarmerId, p.Farmer.FirstName, p.Farmer.LastName })
-        .Select(g => new FarmerProductGroupViewModel
+        // Apply filters if provided
+        if (!string.IsNullOrEmpty(category))
         {
-            FarmerName = g.Key.FirstName + " " + g.Key.LastName,
-            Products = g.Select(p => new ProductListViewModel
+            //cheks for products where the inputted category matches the database product cateogry
+            query = query.Where(p => p.Category == category);
+        }
+
+        if (startDate.HasValue)
+        {
+            query = query.Where(p => p.ProductionDate >= startDate.Value);
+        }
+
+        if (endDate.HasValue)
+        {
+            query = query.Where(p => p.ProductionDate <= endDate.Value);
+        }
+
+
+        //groups products into each farmers' one
+        //lists products under each farmer
+        var groupedProducts = await query.GroupBy(p => new { p.FarmerId, p.Farmer.FirstName, p.Farmer.LastName })
+            .Select(g => new FarmerProductGroupViewModel
             {
-                Name = p.Name,
-                Category = p.Category,
-                ProductionDate = p.ProductionDate,
-                ImagePath = p.ImagePath,
-                FarmerName = g.Key.FirstName + " " + g.Key.LastName
-            }).ToList()
-        })
-        .ToListAsync();
+                FarmerName = g.Key.FirstName + " " + g.Key.LastName,
+                Products = g.Select(p => new ProductListViewModel
+                {
+                    Name = p.Name,
+                    Category = p.Category,
+                    ProductionDate = p.ProductionDate,
+                    ImagePath = p.ImagePath,
+                    FarmerName = g.Key.FirstName + " " + g.Key.LastName
+                }).ToList()
+            })
+            .ToListAsync();
 
-    var model = new CategoryFilterModel
-    {
-        Category = category,
-        StartDate = startDate,
-        EndDate = endDate,
-        Categories = categories,
-        Products = groupedProducts.SelectMany(g => g.Products).ToList()
-    };
+        var model = new CategoryFilterModel
+        {
+            Category = category,
+            StartDate = startDate,
+            EndDate = endDate,
+            Categories = categories,
+            Products = groupedProducts.SelectMany(g => g.Products).ToList()
+        };
 
-    ViewBag.GroupedProducts = groupedProducts;
+        //grooupedProducts contains all the filtered products
+        ViewBag.GroupedProducts = groupedProducts;
 
-    return View(model);
-}
+        return View(model);
+    }
 
 
 
-
+    //Farmer views their own products
     [Authorize(Roles = "Farmer")]
     public async Task<IActionResult> MyProducts()
     {
         var userId = _userManager.GetUserId(User); // gets the currently logged-in user's ID
 
-        var products = await _context.Products
-            .Where(p => p.FarmerId == userId)
-            .Select(p => new ProductListViewModel
+        var products = await _context.Products.Where(p => p.FarmerId == userId).Select(p => new ProductListViewModel
             {
                 Name = p.Name,
                 Category = p.Category,
                 ProductionDate = p.ProductionDate,
                 ImagePath = p.ImagePath,
-                FarmerName = "" 
+                FarmerName = ""
             })
             .ToListAsync();
 

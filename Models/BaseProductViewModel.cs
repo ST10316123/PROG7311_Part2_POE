@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
+//parent class
+//created solely so that these attributes are not repeated in our other product model classes
 public class BaseProductViewModel
 {
     [Required]
