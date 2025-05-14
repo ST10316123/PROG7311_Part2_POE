@@ -2,7 +2,7 @@
 
 # Agri-Connect Web Platform
 
-Agri-Connect is a web-based platform designed to connect South African farmers with green energy providers. The platform allows farmers to showcase their agricultural products, while employees or system administrators can manage data and monitor platform activity.
+Agri-Connect is a web-based platform designed to connect South African farmers with green energy providers. The platform allows farmers to showcase their agricultural products, while employees or system administrators can manage data and monitor platform activity. This Readme file contains all the necessary information about the features of this program, what are the requriements and how to run it 
 
 ---
 
@@ -16,7 +16,7 @@ Agri-Connect is a web-based platform designed to connect South African farmers w
 
 ---
 
-## ⚙️ System Features
+## ⚙️ System Features (Functional Requirements)
 
 - Employee login.
 - Farmer registration and login.
@@ -41,10 +41,10 @@ Agri-Connect is a web-based platform designed to connect South African farmers w
 
 - **ASP.NET Core MVC** – Web application framework
 - **Entity Framework Core** – For database access
-- **Microsoft SQL Server Management Studio / SQL Server** – Database
-- **Visual Studio Code** – IDE
+- **Microsoft SQL Server Management Studio / SQL Server** – Database where all the data is stored
+- **Visual Studio Code** – IDE for creating and running the MVC code
 - **Identity** – User authentication & roles
-- **GitHub Desktop** - Clone the repo
+- **GitHub Desktop** - Clone the repository from GitHub (optional)
 
 ---
 
@@ -56,21 +56,28 @@ Follow these steps to get started:
 Ensure you have the following programs installed:
 ```bash
 
-Visual Studio Code
-.NET SDK 8+
+1) Visual Studio Code
 
-MSSQL or SQL Server
+2) .NET SDK 7+ version
 
-GitHub Desktop
+3) MSSQL or SQL Server
+
+4) GitHub Desktop (optional)
 
 ```
 
 ### 2. Clone the Repository
+
+#### Option 1
 ```bash
 git clone https: https://github.com/VCWVL/prog7311-part-2-ST10316123.git
 cd agri-connect
+```
 
-OR Open GitHub Desktop
+
+#### Option 2
+```bash
+Open GitHub Desktop
 Clone repository with this URL : https://github.com/VCWVL/prog7311-part-2-ST10316123.git
 Click on 'Open in Visual Studio Code'
 
@@ -147,16 +154,19 @@ dotnet run
 dotnet build
 ```
 
+
 ### 2. Run the Application
 ```bash
 dotnet run
 ```
+
 
 ### 3. Access the Web App
 Open your browser and navigate to:
 ```bash
 http://localhost:5103/
 ```
+
 
 ### 4. 🧪 Sample Credentials for logging in
 ## These details are present in the Employee and Farmer Seeder classes
@@ -177,6 +187,7 @@ Password: Farmer123!
 
 ```
 
+
 ### 5. 🖼 Sample Data & Images
 Sample images are stored in: 
 ```bash
@@ -185,20 +196,21 @@ wwwroot/images/
 
 Images are linked to products in the seed data.
 
-### 6. 👨‍🌾 Access the Farmer Product List
-Log in using any Farmer credentials (see Sample Credentials) to:
-```bash
-Add new products.
 
-View a list of your own uploaded products.
+### 6. 👨‍🌾 Access the Farmer Product List
+Log in using any Farmer credentials (see Sample Credentials above) to:
+```bash
+1) Add new products.
+
+2) View a list of your own uploaded products.
 ```
 
 ### 7. 🧑‍💼 Access All Farmer Products (Employee View)
 Log in using the Employee credentials to:
 ```bash
-View the complete list of products uploaded by all farmers.
+1) View the complete list of products uploaded by all farmers.
 
-Access filter functionality to refine the product list.
+2) Access filter functionality to refine the product list.
 ```
 
 ### 8. 🔍 Test the Product Filter Feature
