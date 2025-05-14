@@ -1963,7 +1963,7 @@
       ]
     },
     {
-      "Route": "images/marketplace.7awfe99kyo.jpg",
+      "Route": "images/marketplace.jc2xa3p45x.jpg",
       "AssetFile": "images/marketplace.jpg",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1977,7 +1977,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4684"
+          "Value": "90034"
         },
         {
           "Name": "Content-Type",
@@ -1985,21 +1985,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g=\""
+          "Value": "\"I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:42:03 GMT"
+          "Value": "Wed, 14 May 2025 05:51:20 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7awfe99kyo"
+          "Value": "jc2xa3p45x"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g="
+          "Value": "sha256-I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg="
         },
         {
           "Name": "label",
@@ -2022,7 +2022,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4684"
+          "Value": "90034"
         },
         {
           "Name": "Content-Type",
@@ -2030,17 +2030,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g=\""
+          "Value": "\"I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:42:03 GMT"
+          "Value": "Wed, 14 May 2025 05:51:20 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g="
+          "Value": "sha256-I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg="
         }
       ]
     },

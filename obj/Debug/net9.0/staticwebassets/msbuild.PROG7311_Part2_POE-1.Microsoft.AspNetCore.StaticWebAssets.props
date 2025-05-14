@@ -264,8 +264,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7awfe99kyo</Fingerprint>
-      <Integrity>L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g=</Integrity>
+      <Fingerprint>jc2xa3p45x</Fingerprint>
+      <Integrity>I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\marketplace.jpg'))</OriginalItemSpec>

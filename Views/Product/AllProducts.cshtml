@@ -8,13 +8,15 @@
 <!-- Centered Page Heading -->
 <h2 class="text-center mb-5">Farmer's Products</h2>
 
-<!-- Filter Form (Properly Centered) -->
+<!-- Filter Form (Clean and Aligned) -->
 <div class="d-flex justify-content-center mb-4">
     <form asp-action="AllProducts" method="get" class="w-100" style="max-width: 1000px;">
-        <div class="form-row">
-            <div class="col-md-3 mb-3">
-                <select name="category" class="form-control w-100">
-                    <option value="">-- Select Category --</option>
+        <div class="row">
+            <!-- Category Dropdown -->
+            <div class="col-md-6 mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select id="category" name="category" class="form-control">
+                    <option value="">Select Category</option>
                     @foreach (var category in Model.Categories)
                     {
                         <option value="@category" selected="@(Model.Category == category)">
@@ -23,19 +25,32 @@
                     }
                 </select>
             </div>
-            <div class="col-md-3 mb-3">
-                <input type="date" name="startDate" class="form-control w-100" value="@(Model.StartDate?.ToString("yyyy-MM-dd"))" />
+
+            <!-- Date Filters (Stacked) -->
+            <div class="col-md-6 mb-3">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="startDate" class="form-label">Start Date</label>
+                        <input type="date" id="startDate" name="startDate" class="form-control"
+                               value="@(Model.StartDate?.ToString("yyyy-MM-dd"))" />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="endDate" class="form-label">End Date</label>
+                        <input type="date" id="endDate" name="endDate" class="form-control"
+                               value="@(Model.EndDate?.ToString("yyyy-MM-dd"))" />
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <input type="date" name="endDate" class="form-control w-100" value="@(Model.EndDate?.ToString("yyyy-MM-dd"))" />
-            </div>
-            <div class="col-md-3 d-flex align-items-center justify-content-between">
-                <button type="submit" class="btn btn-primary mr-2">Filter</button>
-                <a asp-action="AllProducts" class="btn btn-secondary">Reset</a>
-            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-center mt-2">
+            <button type="submit" class="btn btn-success me-2">Filter</button>
+            <a asp-action="AllProducts" class="btn btn-danger">Reset</a>
         </div>
     </form>
 </div>
+
 
 <!-- Grouped Product List -->
 @if (groupedProducts != null && groupedProducts.Any())

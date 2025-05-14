@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lN1daui9bw9RxZGjPKyE3xQwZj1lVV3nXUU3TlqdTPs=",
+  "Hash": "W86WJQfW2SfXNvAc5+GU+9RIEBw1ZyDaKSobcJ145po=",
   "Source": "PROG7311_Part2_POE-1",
   "BasePath": "_content/PROG7311_Part2_POE-1",
   "Mode": "Default",
@@ -1711,8 +1711,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7awfe99kyo",
-      "Integrity": "L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g=",
+      "Fingerprint": "jc2xa3p45x",
+      "Integrity": "I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\marketplace.jpg"
@@ -4665,7 +4665,7 @@
       ]
     },
     {
-      "Route": "images/marketplace.7awfe99kyo.jpg",
+      "Route": "images/marketplace.jc2xa3p45x.jpg",
       "AssetFile": "C:\\Users\\Abdul\\Documents\\VS Codes\\PROG7311_Part2_POE-1\\wwwroot\\images\\marketplace.jpg",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4675,7 +4675,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4684"
+          "Value": "90034"
         },
         {
           "Name": "Content-Type",
@@ -4683,11 +4683,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g=\""
+          "Value": "\"I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:42:03 GMT"
+          "Value": "Wed, 14 May 2025 05:51:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4697,7 +4697,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7awfe99kyo"
+          "Value": "jc2xa3p45x"
         },
         {
           "Name": "label",
@@ -4705,7 +4705,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g="
+          "Value": "sha256-I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg="
         }
       ]
     },
@@ -4720,7 +4720,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4684"
+          "Value": "90034"
         },
         {
           "Name": "Content-Type",
@@ -4728,11 +4728,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g=\""
+          "Value": "\"I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:42:03 GMT"
+          "Value": "Wed, 14 May 2025 05:51:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4742,7 +4742,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-L3P4Kl10co8EG/PrSSinnBh6QgobnFoAGIlLttb8+/g="
+          "Value": "sha256-I1DibILHGyN2QqHnGiF4rczhlpOTz12MyM4dV1TaPwg="
         }
       ]
     },
