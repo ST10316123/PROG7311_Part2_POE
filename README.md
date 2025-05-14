@@ -77,9 +77,9 @@ cd agri-connect
 
 #### Option 2
 ```bash
-Open GitHub Desktop
-Clone repository with this URL : https://github.com/VCWVL/prog7311-part-2-ST10316123.git
-Click on 'Open in Visual Studio Code'
+- Open GitHub Desktop
+- Clone repository with this URL : https://github.com/VCWVL/prog7311-part-2-ST10316123.git
+- Click on 'Open in Visual Studio Code'
 
 ```
 
