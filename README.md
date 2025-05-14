@@ -227,3 +227,19 @@ To reset and view all products again:
 Click the "Reset" or clear the form and submit again.
 ```
 ---
+
+## Author
+**Abdul Basit Deshmukh**
+
+---
+
+## References
+- Basic writing and formatting syntax (no date) GitHub Docs. Available at: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax (Accessed: 14 May 2025). 
+- Dykstra, T. et al. (2024) Tutorial: Get started with EF Core in an ASP.NET MVC web app, Microsoft Learn. Available at: https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-9.0 (Accessed: 14 May 2025). 
+- Saini, V.K. (2023) Upload and display image in MVC Application, C# Corner. Available at: https://www.c-sharpcorner.com/UploadFile/b696c4/how-to-upload-and-display-image-in-mvc/ (Accessed: 14 May 2025). 
+- Singh, R. (2024) Learn github-flavored Markdown syntax and formatting – with examples, freeCodeCamp.org. Available at: https://www.freecodecamp.org/news/github-flavored-markdown-syntax-examples/ (Accessed: 14 May 2025). 
+- Vickers, A. et al. (2024) Identity model customization in ASP.NET Core, Microsoft Learn. Available at: https://learn.microsoft.com/en-us/aspnet/core/security/authentication/customize-identity-model?view=aspnetcore-9.0 (Accessed: 14 May 2025). 
+- Wagner, B. and Oyetubo, O. (2025) Introduction to LINQ queries - C#, Introduction to LINQ Queries - C# | Microsoft Learn. Available at: https://learn.microsoft.com/en-us/dotnet/csharp/linq/get-started/introduction-to-linq-queries (Accessed: 14 May 2025). 
+- Wagner, B., Deschryver, T. and Buibao, L. (2024) Standard query operators Overview - C#, C# | Microsoft Learn. Available at: https://learn.microsoft.com/en-us/dotnet/csharp/linq/standard-query-operators/ (Accessed: 14 May 2025). 
+- Zang, A. (2024) ASP.NET Core Basics: Getting started with Linq, Telerik Blogs. Available at: https://www.telerik.com/blogs/asp-net-core-basics-getting-started-linq (Accessed: 14 May 2025). 
+
