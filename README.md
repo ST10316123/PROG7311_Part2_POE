@@ -187,21 +187,23 @@ Images are linked to products in the seed data.
 
 ### 6. 👨‍🌾 Access the Farmer Product List
 Log in using any Farmer credentials (see Sample Credentials) to:
-
+```bash
 Add new products.
 
 View a list of your own uploaded products.
+```
 
 ### 7. 🧑‍💼 Access All Farmer Products (Employee View)
 Log in using the Employee credentials to:
-
+```bash
 View the complete list of products uploaded by all farmers.
 
 Access filter functionality to refine the product list.
+```
 
 ### 8. 🔍 Test the Product Filter Feature
 Once logged in as an Employee, test the filtering functionality:
-
+```bash
 ✅ Filter by Category – Select a category from the dropdown.
 
 ✅ Filter by Date Range – Specify a start and/or end production date.
@@ -211,5 +213,5 @@ Click the "Filter" button to apply filters.
 To reset and view all products again:
 
 Click the "Reset" or clear the form and submit again.
-
+```
 ---
